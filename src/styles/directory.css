@@ -1,0 +1,257 @@
+.directory-page {
+  min-height: 100vh;
+  background-color: var(--mu-paper);
+}
+
+.page-heading {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  background-color: var(--mu-navy);
+  color: var(--mu-white);
+}
+
+.page-heading h1 {
+  margin: 0.5rem 0 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+}
+
+.page-heading > p:last-child {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.page-eyebrow {
+  margin: 0;
+  color: var(--mu-gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+}
+
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.compact-grid {
+  padding-top: 2rem;
+}
+
+.directory-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--mu-white);
+  box-shadow: 0 8px 24px rgba(8, 47, 91, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.directory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(8, 47, 91, 0.18);
+}
+
+.card-content,
+.faculty-card {
+  padding: 2rem;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.directory-card h2 {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--mu-navy);
+  font-size: 1.7rem;
+}
+
+.directory-card p {
+  line-height: 1.6;
+}
+
+.faculty-card {
+  border-top: 6px solid var(--mu-light-blue);
+}
+
+.faculty-title {
+  margin: 0 0 1rem;
+  color: var(--mu-blue);
+  font-weight: 700;
+}
+
+.faculty-department {
+  margin: 0 0 1rem;
+  color: var(--mu-green);
+  font-weight: 700;
+}
+
+.faculty-email {
+  margin-top: auto;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.department-card {
+  border-bottom: 6px solid var(--mu-light-blue);
+}
+
+.department-description {
+  margin: 0 0 1.5rem;
+  color: #39475a;
+  line-height: 1.65;
+}
+
+.card-link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--mu-navy);
+  color: var(--mu-white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  background-color: var(--mu-blue);
+  color: var(--mu-white);
+}
+
+.department-details-page {
+  min-height: 100vh;
+  background-color: var(--mu-paper);
+}
+
+.department-hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(8, 47, 91, 0.86), rgba(8, 47, 91, 0.86)),
+    var(--mu-blue);
+  color: var(--mu-white);
+}
+
+.department-hero h1 {
+  margin: 0.5rem 0 1rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+}
+
+.department-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.department-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.single-column {
+  display: block;
+}
+
+.department-info {
+  padding: 2rem;
+  background-color: var(--mu-white);
+  box-shadow: 0 8px 24px rgba(8, 47, 91, 0.1);
+}
+
+.department-featured-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+.department-info h2,
+.contact-panel h2,
+.section-heading h2 {
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--mu-navy);
+}
+
+.department-info p {
+  line-height: 1.7;
+}
+
+.contact-panel {
+  padding: 1.5rem;
+  border-left: 5px solid var(--mu-light-blue);
+  background-color: #edf5fa;
+}
+
+.contact-panel p {
+  line-height: 1.6;
+}
+
+.contact-panel a {
+  color: var(--mu-blue);
+  font-weight: 700;
+}
+
+.contact-panel a:hover {
+  text-decoration: underline;
+}
+
+.department-faculty-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+@media (max-width: 750px) {
+  .directory-grid {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1rem;
+  }
+
+  .department-content {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.25rem;
+  }
+
+  .contact-panel {
+    border-left: none;
+    border-top: 5px solid var(--mu-light-blue);
+  }
+
+  .page-heading {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .department-faculty-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
